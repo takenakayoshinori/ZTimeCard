@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ScheduleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_back"
+            android:background="@drawable/link_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/back_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switch_schedule"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/schedule_comment"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_sttm"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sttm_title" />
+
+            <TextView
+                android:id="@+id/title_edtm"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:text="@string/edtm_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:paddingBottom="1dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_sttm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/no_data"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="1dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_edtm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/no_data"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/select_title"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup_act"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_activity"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/select_activity" />
+
+            <RadioButton
+                android:id="@+id/radio_notification"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/select_notification" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switch_boot"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/boot_comment"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_notime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/check_notime" />
+
+        <Button
+            android:id="@+id/button_scheduleSetup"
+            android:layout_width="150dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/act_button"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/setup_title" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

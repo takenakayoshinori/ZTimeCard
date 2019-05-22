@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".InputUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_back"
+            android:background="@drawable/link_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back_title"/>
+
+        <TextView
+            android:id="@+id/title_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/user_title" />
+
+        <EditText
+            android:id="@+id/text_user"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="textVisiblePassword"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/title_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/passwd_title" />
+
+        <EditText
+            android:id="@+id/text_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_userSetup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/act_button"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/setup_title" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
